@@ -1,0 +1,69 @@
+/* ---------------------------------------------------------
+   Design tokens
+   Palette: slate/ink neutrals with a single restrained blue
+   accent, built for a formal, internal business tool rather
+   than a marketing page.
+---------------------------------------------------------- */
+:root {
+  --ink-900: #101828;
+  --ink-800: #1d2939;
+  --ink-700: #344054;
+  --ink-500: #667085;
+  --ink-300: #d0d5dd;
+  --ink-200: #e4e7ec;
+  --ink-100: #f2f4f7;
+  --ink-50:  #f9fafb;
+
+  --accent-700: #1d4ed8;
+  --accent-600: #2563eb;
+  --accent-500: #3b82f6;
+  --accent-100: #dbeafe;
+  --accent-50:  #eff6ff;
+
+  --success-600: #15803d;
+  --success-100: #dcfce7;
+  --danger-600: #b91c1c;
+  --danger-100: #fee2e2;
+  --warning-600: #b45309;
+  --warning-100: #fef3c7;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+
+  --shadow-card: 0 1px 2px rgba(16, 24, 40, 0.06), 0 1px 3px rgba(16, 24, 40, 0.08);
+
+  --font-display: 'Source Serif Pro', Georgia, 'Times New Roman', serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+}
+
+* { box-sizing: border-box; }
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--ink-800);
+  background: var(--ink-50);
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: inherit; text-decoration: none; }
+
+button, input, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent-600);
+  outline-offset: 2px;
+}
+
+::selection {
+  background: var(--accent-100);
+}
